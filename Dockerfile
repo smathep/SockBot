@@ -18,7 +18,7 @@ ADD pyproject.toml .
 ADD poetry.lock .
 
 RUN poetry config virtualenvs.in-project true
-RUN poetry install --no-dev --no-interaction
+RUN poetry install --no-root --no-interaction
 
 ADD . /SockBot
 
